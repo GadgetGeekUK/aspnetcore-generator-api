@@ -15,7 +15,7 @@ COPY . .
 # test - env variable assists in xunit vsibility in teamcity
 # ENV doesn't seem to work with 'latest' team city
 ENV TEAMCITY_PROJECT_NAME=fake
-RUN dotnet test--verbosity=normal tests/tests.csproj
+RUN dotnet test --verbosity=normal tests/tests.csproj
 
 # publish
 RUN dotnet publish api/api.csproj -o /publish
