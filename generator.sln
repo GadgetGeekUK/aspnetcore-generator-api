@@ -5,6 +5,30 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api", "api\api.csproj", "{395194DA-84B9-4E9B-BA03-F4D091155E37}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tests", "tests\tests.csproj", "{21E6983D-8E04-4058-A1D9-284E0730C579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17A7980F-CD01-4980-8D14-CF52167A618E}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infra", "infra", "{78BF3345-508D-4D7B-B3BE-8FC8E0CCA16E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "registry", "registry", "{24D4ED90-0286-450B-B9AE-B10310B7FF18}"
+	ProjectSection(SolutionItems) = preProject
+		infra\registry\docker-compose.yml = infra\registry\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "teamcity", "teamcity", "{083C1C33-61B7-4EA4-B8E9-E1D7F2F4D55D}"
+	ProjectSection(SolutionItems) = preProject
+		infra\teamcity\docker-compose.yml = infra\teamcity\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "agent", "agent", "{3F52CD1A-5775-4DDF-942E-A69B8FC7CE68}"
+	ProjectSection(SolutionItems) = preProject
+		infra\teamcity\agent\Dockerfile = infra\teamcity\agent\Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +54,23 @@ Global
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x64.Build.0 = Release|x64
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.ActiveCfg = Release|x86
 		{395194DA-84B9-4E9B-BA03-F4D091155E37}.Release|x86.Build.0 = Release|x86
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|x64.Build.0 = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Debug|x86.Build.0 = Debug|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|x64.ActiveCfg = Release|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|x64.Build.0 = Release|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|x86.ActiveCfg = Release|Any CPU
+		{21E6983D-8E04-4058-A1D9-284E0730C579}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78BF3345-508D-4D7B-B3BE-8FC8E0CCA16E} = {17A7980F-CD01-4980-8D14-CF52167A618E}
+		{24D4ED90-0286-450B-B9AE-B10310B7FF18} = {78BF3345-508D-4D7B-B3BE-8FC8E0CCA16E}
+		{083C1C33-61B7-4EA4-B8E9-E1D7F2F4D55D} = {78BF3345-508D-4D7B-B3BE-8FC8E0CCA16E}
+		{3F52CD1A-5775-4DDF-942E-A69B8FC7CE68} = {083C1C33-61B7-4EA4-B8E9-E1D7F2F4D55D}
 	EndGlobalSection
 EndGlobal
