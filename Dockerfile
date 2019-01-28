@@ -12,7 +12,7 @@ RUN dotnet restore tests/tests.csproj
 # copy src
 COPY . .
 
-# test
+# test - env variable assists in xunit vsibility in teamcity
 ENV TEAMCITY_PROJECT_NAME=fake
 RUN dotnet test tests/tests.csproj
 
